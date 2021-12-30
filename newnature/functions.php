@@ -4,16 +4,14 @@ function load_stylesheets()
 {
 
     
-    $rand = rand(1,99999999);
+   
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', 
     array(), false, 'all');
-    wp_enqueue_style('bootstrap', $rand);
+    wp_enqueue_style('bootstrap');
 
     wp_register_style('style', get_template_directory_uri() . '/style.css', 
         array(), false, 'all');
     wp_enqueue_style('style');
-
-
 
 }
 add_action('wp_enqueue_scripts', 'load_stylesheets');
@@ -34,18 +32,13 @@ add_action('wp_enqueue_scripts', 'include_jquery');
 
 
 
-function loadjs()
+function load_js()
 {
-
-
-
-    wp_register_script('customjs', get_template_directory_uri() . './js/scripts.js', '', 1, true );
-    wp_enqueue_script('customjs');
-
-
+          wp_enqueue_script('jquery');
+          wp_register_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', false, true);
+          wp_enqueue_script('bootstrapjs');    
 }
-
-add_action('wp_enqueue_scripts', 'loadjs');
+add_action('wp_enqueue_scripts', 'load_js');
 
 add_theme_support('menus');
 
@@ -62,14 +55,28 @@ add_theme_support('post-thumbnails');
 
 
 
-add_image_size('smallest', 200, 200, true);
-add_image_size('largest', 800, 800, true);
+// add_image_size('smallest', 200, 200, true);
+// add_image_size('largest', 800, 800, true);
 
 
 
 
-//Include custom navwalker
-require_once('bs4navwalker.php');
-// Register WordPress nav menu
-register_nav_menu('top', 'Top menu');
+// //Include custom navwalker
+// require_once('bs4navwalker.php');
+// // Register WordPress nav menu
+// register_nav_menu('top', 'Top menu');
+
+function register_my_menus() {
+    register_nav_menus(
+      array(
+        'header-menu' => __( 'Header Menu' ),
+        'extra-menu' => __( 'Footer Menu' )
+       )
+     );
+   }
+   add_action( 'init', 'register_my_menus' );
+
+
+
+
 ?>

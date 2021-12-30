@@ -4,7 +4,7 @@ Author: Sairaj
 Version: 1.5
 Tags: Beautyful nature, First custom theme trail, 
 Description : Wordpress Nature theme, using HTML CSS and Javascript, Theme contains pages, blogs, pictures, testimonial,header,footer, cards, etc
-Demo URL: https: //websitedemos.net/love-nature-02/
+Demo URL: https://websitedemos.net/love-nature-02/
 
 */
 
@@ -32,7 +32,7 @@ Demo URL: https: //websitedemos.net/love-nature-02/
     padding-top: 150px;
     text-align: center;
     font-size:50px ;
-    font-family: "DM Sans","sans-serif";
+    font-family: "DM Sans",sans-serif;
     color: #ffff;
 }
 
@@ -40,7 +40,7 @@ Demo URL: https: //websitedemos.net/love-nature-02/
     padding-bottom: 10px;
     text-align: center;
     font-size:18px ;
-    font-family: "DM Sans","sans-serif";
+    font-family: "DM Sans",sans-serif;
     color: #ffff;
     line-height: 20px;
 }
@@ -48,7 +48,7 @@ Demo URL: https: //websitedemos.net/love-nature-02/
     padding-bottom: 0px;
     text-align: center;
     font-size:44px ;
-    font-family: "DM Sans", "sans-serif";
+    font-family: "DM Sans", sans-serif;
     color: #ffff;
     line-height: 5px;
 }
@@ -87,6 +87,7 @@ Demo URL: https: //websitedemos.net/love-nature-02/
     font-family: "DM Sans",sans-serif;
     text-decoration:underline yellow 3px;
     text-underline-offset: 10px;
+    
 }
 .card-body{
     border:0px;
@@ -119,7 +120,7 @@ Demo URL: https: //websitedemos.net/love-nature-02/
         
 }
 #carouselExampleControls{
-    background-color: #f1ebebbf;
+    background-color: #f7f6f2;
 }
 
 #aboutus{
@@ -216,3 +217,33 @@ Demo URL: https: //websitedemos.net/love-nature-02/
     padding-left: 310px;
     padding-top: 20px;
 }
+
+
+
+.nav li{
+    padding-top: 20px;
+    margin: 0px 30px;
+    /* margin-top: 20px;  */
+}
+.nav{
+    margin-right: 40px;
+}
+
+/* .nav li{
+    padding-top: 20px;
+} */
+
+/* #dog{
+   padding-top: 20px;
+} */
+
+#phone{
+    margin-left:80px;
+    
+}
+
+#number{
+    padding-top: 20px;
+    padding-right: 100px
+}
+

@@ -1,14 +1,11 @@
-
-
-
-
-   <div class="midfoot">
-   <p class="text2">QUESTIONS? </p>
-   <p class="text3">Whether you’re curious about features, a free trial, or even press, <br> we’re here to answer any questions. </p>
-   <div class="lastbut">
-     <button type="button" class="btn btn-warning">Let's Talk Now</button>
-   </div>
-   </div>
+<div class="midfoot">
+    <p class="text2">QUESTIONS? </p>
+    <p class="text3">Whether you’re curious about features, a free trial, or even press, <br> we’re here to answer any
+        questions. </p>
+    <div class="lastbut">
+        <button type="button" class="btn btn-warning">Let's Talk Now</button>
+    </div>
+</div>
 
 
 
@@ -79,7 +76,7 @@
 </div>
 </div> -->
 
-<footer>
+<!-- <footer>
   <div class="lastfoot">
   <div class="container-fluid" id="myfoot">
       <div class="row">
@@ -120,12 +117,34 @@
   </div>
   
 
+</footer> -->
+
+
+
+
+
+<footer>
+    <div class="row">
+
+        <div class="col-md-6">
+            <?php wp_nav_menu( array( 'theme_location' => 'extra-menu','menu_class'=> 'nav justify-content-end','container_class'=>'menubar') ); 
+ ?>
+        </div>
+
+        <div class="col-md-2">
+            <img src="http://localhost/wordpress/wp-content/uploads/2021/12/logo-green.jpg" width="86" height="72"
+                alt="">
+        </div>
+
+        <div class="col-md-4">
+            <p>Love Nature by Tyler Moore</p>
+        </div>
+    </div>
 </footer>
-
-
 
 <?php wp_footer();?>
 
 
 </body>
+
 </html>
